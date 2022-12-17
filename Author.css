@@ -1,0 +1,96 @@
+* {
+  border-sizing: border-box;	
+}
+
+@font-face {
+  font-family: bardolatry;
+  src: url(fonts/bardolatry.ttf);  
+}
+
+@font-face {
+  font-family: neon;
+  src: url(fonts/neon.ttf);  
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-width: 100%;
+}
+
+.author {
+  font-family: bardolatry;	
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  text-shadow: 0 0 10px #00b3ff,
+  0 0 20px #00b3ff,
+  0 0 40px #00b3ff,
+  0 0 80px #00b3ff,
+  0 0 160px #00b3ff;
+  
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  max-width: 100%;
+  grid-template-rows: 500px 1fr;  
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  overflow: auto;
+}
+
+.container > header {
+  display: grid;
+  grid-template-rows: 150px 250px;  
+}
+
+.container > header > div{
+  display: flex;
+  justify-content: center;
+}
+
+.container > header > div > h1{
+  color: white;
+  font-family: neon;
+  font-size: 3rem;
+  text-shadow: 0 0 10px #e19c18,
+  0 0 20px #e19c18,
+  0 0 40px #e19c18,
+  0 0 60px #e19c18;
+}
+
+.container > section {
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows:  500px ;
+}
+
+.container > section > div {
+  grid-column: 2;
+  grid-row: 1;
+  background-color: rgb(0, 42, 52,0.5);
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0 0 10px #00b3ff,
+  0 0 20px #00b3ff,
+  0 0 40px #00b3ff,
+  0 0 60px #00b3ff;
+}
+
+
+.container > section > div > p{
+  text-align: justify;
+  font-family: comic sans MS;
+  color: white;
+  line-height: 2.5;
+}
+
+.link {
+  font-family: bardolatry, calibri;
+  color: gold;
+  text-decoration: none;  
+}
+
